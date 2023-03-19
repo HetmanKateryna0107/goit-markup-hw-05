@@ -62,7 +62,7 @@
       <!--section1 hero -->
       <section class="hero-color">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="modal-btn" type="button">Order Service</button>
+        <button class="modal-btn" type="button" data-modal-open>Order Service</button>
       </section>
       <!-- section2 -->
       <section class="section ">
@@ -399,13 +399,12 @@
               </div> </div>
                   </footer>
 
-<div class="backdrop">
+<div class="backdrop is-hidden " data-modal>
 <div class="modal">
-  <button type="button" class="modal-clase-btn">
+  <button type="button" class="modal-clase-btn" data-modal-close>
     <svg class="modal-close-btn-icon">
       <use href
-      ="images/sprite.svg#icon-close-btn width=">
-
+      ="./images/sprite.svg#icon-close-btn" width="8" hight="8">
       </use>
     </svg>
   </button>
