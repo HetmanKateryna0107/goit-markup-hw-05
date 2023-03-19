@@ -128,16 +128,21 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 24px 0;
+  transition: color 250ms var(--timing-function);
 }
 
-.menu-link:active,
 .menu-link:hover,
 .menu-link:focus {
   color: var(--pressed-state-color);
 }
 
+/* .menu-item::after {
+  content: "";
+  width: 64px;
+  height: 4px;
+  color: var(--pressed-state-color);
+} */
 /* =====================================================adress===================================================== */
 .addres {
   margin-left: auto;
@@ -206,6 +211,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
+  transition: background-color 250ms var(--timing-function);
   background-color: var(--primaru-brand-color);
   margin-top: 48px;
 }
@@ -285,6 +291,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--primaru-brand-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .social-list {
   display: flex;
@@ -332,6 +339,7 @@ img {
   gap: 24px;
 }
 .company-list-icon {
+  transition: fill 250ms var(--timing-function);
   fill: var(--subtle-text);
 }
 
@@ -341,6 +349,7 @@ img {
   align-items: center;
   width: 168px;
   height: 88px;
+  transition: border 250ms var(--timing-function);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
 }
@@ -385,6 +394,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
   background-color: var(--text-color);
 }
 .footer-social-list-icon {
@@ -436,15 +446,14 @@ img {
 /* =====================================================portfolio =====================================================*/
 
 .struktur-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 12px 24px;
   font-family: "Roboto", "sens-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
   color: var(--primaru-brand-color);
   border: 1px solid var(--light-color);
   border-radius: 4px;
@@ -498,6 +507,7 @@ img {
 }
 .card {
   display: block;
+  transition: color 250ms var(--timing-function);
 }
 
 .card:hover,
