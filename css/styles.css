@@ -128,7 +128,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  padding-top: 24px 0;
+  padding: 24px 0;
   transition: color 250ms var(--timing-function);
 }
 
@@ -137,12 +137,24 @@ img {
   color: var(--pressed-state-color);
 }
 
-/* .menu-item::after {
+.activ-menu-link {
+  position: relative;
+  /* padding: 20px; */
+}
+.activ-menu-link::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
   content: "";
-  width: 64px;
+  margin: auto;
+  width: 100%;
   height: 4px;
-  color: var(--pressed-state-color);
-} */
+  border-radius: 2px;
+  background-color: var(--pressed-state-color);
+  transition: width 250ms var(--timing-function);
+}
+
 /* =====================================================adress===================================================== */
 .addres {
   margin-left: auto;
@@ -395,7 +407,7 @@ img {
   height: 40px;
   border-radius: 50%;
   transition: background-color 250ms var(--timing-function);
-  background-color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-list-icon {
   fill: var(--subtle-text-color);
@@ -553,23 +565,31 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms var(--timing-function),
+    visibility 500ms var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 100%;
+  min-height: 558px;
   width: 408px;
-  height: 558px;
+  transition: tranform 250ms var(--timing-function);
   background-color: var(--subtle-text-color);
+}
+.backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%) scale(0.6);
 }
 .modal-clase-btn {
   position: absolute;
