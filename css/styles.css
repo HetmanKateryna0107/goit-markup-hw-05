@@ -128,7 +128,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  padding: 24px 0;
+  padding: 29px 0;
   transition: color 250ms var(--timing-function);
 }
 
@@ -352,7 +352,7 @@ img {
 }
 .company-list-icon {
   transition: fill 250ms var(--timing-function);
-  fill: var(--subtle-text);
+  fill: var(--pressed-state-color);
 }
 
 .company-list-link {
@@ -361,7 +361,7 @@ img {
   align-items: center;
   width: 168px;
   height: 88px;
-  transition: border 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
 }
@@ -519,7 +519,7 @@ img {
 }
 .card {
   display: block;
-  transition: color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .card:hover,
