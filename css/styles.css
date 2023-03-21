@@ -141,6 +141,8 @@ img {
   position: relative;
   /* padding: 20px; */
 }
+.current {
+}
 .activ-menu-link::after {
   position: absolute;
   display: block;
@@ -352,7 +354,7 @@ img {
 }
 .company-list-icon {
   transition: fill 250ms var(--timing-function);
-  fill: var(--pressed-state-color);
+  fill: var(--subtle-text);
 }
 
 .company-list-link {
@@ -372,7 +374,7 @@ img {
 }
 .company-list-link:hover .company-list-icon,
 .company-list-link:focus .company-list-icon {
-  fill: var(--primaru-brand-color);
+  fill: var(--pressed-state-color);
 }
 /* =====================================================footer =====================================================*/
 
